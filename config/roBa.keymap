@@ -132,7 +132,7 @@
             //// sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
             // 設定したスクロール操作を割り当て
 
-            sensor-bindings = <&scroll_up_down>;
+            sensor-bindings = <&encoder_msc_down_up>;
         };
 
         MOUSE {
