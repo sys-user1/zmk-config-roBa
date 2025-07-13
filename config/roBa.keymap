@@ -5,7 +5,7 @@
 
 // スクロール量を変更
 
-#define ZMK_MOUSE_POINTING_SCRL_VAL 100
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 80
 
 &mt {
     flavor = "balanced";
@@ -79,14 +79,12 @@
         };
 
         // スクロール動作の追加
-
-        scroll_up_down: behavior_sensor_rotate_mouse_wheel_up_down {
+        encoder_msc_down_up: encoder_msc_down_up {
             compatible = "zmk,behavior-sensor-rotate";
+            label = "ENCODER_MSC_DOWN_UP";
             #sensor-binding-cells = <0>;
-            bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
-
+            bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
             // スクロールのタップ時間を設定 (20ms)
-
             tap-ms = <20>;
         };
     };
@@ -102,7 +100,7 @@
 &kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 6 INT_HENKAN  &lt 2 SPACE  &lt 2 INT_MUHENKAN      &kp BACKSPACE   &lt 1 ENTER                             &kp DEL
             >;
 
-            sensor-bindings = <&scroll_up_down>;
+            sensor-bindings = <&encoder_msc_down_up>;
         };
 
         NUM {
