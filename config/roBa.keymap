@@ -62,6 +62,16 @@
             bindings = <&mkp MB5>;
             key-positions = <24 25>;
         };
+
+        left_click {
+            bindings = <&mkp MB1>;
+            key-positions = <18 19>;
+        };
+
+        right_click {
+            bindings = <&mkp MB2>;
+            key-positions = <20 21>;
+        };
     };
 
     macros {
@@ -113,10 +123,10 @@
 
         NUM {
             bindings = <
-&kp F9             &kp F10   &kp F11  &kp F12   &kp PAGE_UP                               &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &kp TILDE
-&kp F1             &kp F2    &kp F3   &kp F4    &kp PAGE_DOWN  &trans         &kp PERIOD  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp NUMBER_0  &mt RIGHT_SHIFT MINUS
-&mt LEFT_SHIFT F5  &kp F6    &kp F7   &kp F8    &kp UP         &kp TAB        &kp CARET   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_0  &mt RIGHT_CONTROL LEFT_PARENTHESIS
-&kp LEFT_CONTROL   &kp HOME  &kp END  &kp LEFT  &kp DOWN       &kp RIGHT      &kp ESCAPE  &trans                                                  &kp SLASH
+&kp F9             &kp F10   &kp F11           &kp F12   &kp PAGE_UP                               &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &kp TILDE
+&kp F1             &kp F2    &kp F3            &kp F4    &kp PAGE_DOWN  &trans         &kp PERIOD  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp NUMBER_0  &mt RIGHT_SHIFT MINUS
+&mt LEFT_SHIFT F5  &kp F6    &kp F7            &kp F8    &kp UP         &kp TAB        &kp CARET   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_0  &mt RIGHT_CONTROL DOUBLE_QUOTES
+&kp LEFT_CONTROL   &kp HOME  &mt LEFT_ALT END  &kp LEFT  &kp DOWN       &kp RIGHT      &kp ESCAPE  &trans                                                  &kp SLASH
             >;
         };
 
