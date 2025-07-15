@@ -6,6 +6,12 @@
         zmk,physical-layout = &roba_physical_layout;
     };
 
+    {
+      compatible = "zmk,keyboard";
+      // JISキーボード配列
+      kbd-layout = "jp";
+    };
+
     roba_physical_layout: roba_physical_layout {
         compatible = "zmk,physical-layout";
         display-name = "Default";
