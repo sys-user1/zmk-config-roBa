@@ -114,10 +114,10 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W         &kp E             &kp R                          &kp T                                             &kp Y        &kp U  &kp I      &kp O    &kp P
-&kp A             &kp S         &kp D             &kp F                          &kp G        &kp LS(LG(S))         &kp SQT        &kp H        &kp J  &lt 5 K    &kp L    &mt RIGHT_SHIFT SEMICOLON
-&mt LEFT_SHIFT Z  &kp X         &kp C             &kp V                          &kp B        &kp SLASH             &kp INT_YEN    &kp N        &kp M  &kp COMMA  &kp DOT  &mt RIGHT_CONTROL MINUS
-&kp LCTRL         &kp LEFT_WIN  &mt LEFT_ALT TAB  &lt_to_layer_0 6 INT_MUHENKAN  &lt 2 SPACE  &lt 2 INT_HENKAN      &kp BACKSPACE  &lt 1 ENTER                             &kp DEL
+&kp Q             &kp W         &kp E             &kp R                          &kp T                                                   &kp Y        &kp U  &kp I      &kp O    &kp P
+&kp A             &kp S         &kp D             &kp F                          &kp G        &kp LS(LG(S))         &kp SQT              &kp H        &kp J  &lt 5 K    &kp L    &mt RIGHT_SHIFT SEMICOLON
+&mt LEFT_SHIFT Z  &kp X         &kp C             &kp V                          &kp B        &kp SLASH             &kp INTERNATIONAL_1  &kp N        &kp M  &kp COMMA  &kp DOT  &mt RIGHT_CONTROL MINUS
+&kp LCTRL         &kp LEFT_WIN  &mt LEFT_ALT TAB  &lt_to_layer_0 6 INT_MUHENKAN  &lt 2 SPACE  &lt 2 INT_HENKAN      &kp BACKSPACE        &lt 1 ENTER                             &kp DEL
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
@@ -125,10 +125,10 @@
 
         NUM {
             bindings = <
-&kp F9             &kp F10   &kp F11           &kp F12   &kp PAGE_UP                               &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &kp TILDE
-&kp F1             &kp F2    &kp F3            &kp F4    &kp PAGE_DOWN  &trans         &kp PERIOD  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp NUMBER_0  &mt RIGHT_SHIFT MINUS
-&mt LEFT_SHIFT F5  &kp F6    &kp F7            &kp F8    &kp UP         &kp TAB        &kp CARET   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_0  &mt RIGHT_CONTROL DOUBLE_QUOTES
-&kp LEFT_CONTROL   &kp HOME  &mt LEFT_ALT END  &kp LEFT  &kp DOWN       &kp RIGHT      &kp ESCAPE  &trans                                                  &kp SLASH
+&kp F1                  &kp F2         &kp F3                      &kp F4    &kp F5                                  &kp F6        &kp F7        &kp F8        &kp F9        &kp F10
+&kp F11                 &kp F12        &kp F2                      &mkp MB1  &mkp MB2  &trans         &kp PAGE_UP    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &mt RIGHT_SHIFT NUMBER_5
+&mt LEFT_SHIFT PAGE_UP  &kp PAGE_DOWN  &kp HOME                    &kp END   &kp UP    &kp TAB        &kp PAGE_DOWN  &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &mt RIGHT_CONTROL NUMBER_0
+&mt LEFT_CONTROL TAB    &kp ESCAPE     &mt LEFT_ALT K_APPLICATION  &kp LEFT  &kp DOWN  &kp RIGHT      &kp ESCAPE     &trans                                                  &kp SLASH
             >;
         };
 
