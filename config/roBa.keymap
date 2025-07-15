@@ -43,16 +43,6 @@
             key-positions = <11 10>;
         };
 
-        ctrl_HOME {
-            bindings = <&kp LC(HOME)>;
-            key-positions = <22 23>;
-        };
-
-        ctrl_END {
-            bindings = <&kp LC(END)>;
-            key-positions = <24 25>;
-        };
-
         ctrl_shift_HOME {
             bindings = <&kp LS(LC(HOME))>;
             key-positions = <0 1>;
@@ -61,6 +51,16 @@
         ctrl_shift_END {
             bindings = <&kp LS(LC(END))>;
             key-positions = <2 3>;
+        };
+
+        back {
+            bindings = <&mkp MB4>;
+            key-positions = <22 23>;
+        };
+
+        next {
+            bindings = <&mkp MB5>;
+            key-positions = <24 25>;
         };
     };
 
@@ -102,10 +102,10 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W         &kp E         &kp R                        &kp T                                                     &kp Y        &kp U  &lt 5 I    &kp O    &kp P
-&kp A             &kp S         &kp D         &kp F                        &kp G        &kp LS(LG(S))           &kp SQT              &kp H        &kp J  &lt 5 K    &kp L    &mt RIGHT_SHIFT SEMICOLON
-&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                        &kp B        &kp SLASH               &kp LS(NON_US_HASH)  &kp N        &kp M  &kp COMMA  &kp DOT  &mt RIGHT_CONTROL MINUS
-&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 6 INT_HENKAN  &lt 2 SPACE  &lt 2 INT_MUHENKAN      &kp BACKSPACE        &lt 1 ENTER                             &kp DEL
+&kp Q             &kp W         &kp E             &kp R                        &kp T                                                     &kp Y        &kp U  &kp I      &kp O    &kp P
+&kp A             &kp S         &kp D             &kp F                        &kp G        &kp LS(LG(S))           &kp SQT              &kp H        &kp J  &lt 5 K    &kp L    &mt RIGHT_SHIFT SEMICOLON
+&mt LEFT_SHIFT Z  &kp X         &kp C             &kp V                        &kp B        &kp SLASH               &kp LS(NON_US_HASH)  &kp N        &kp M  &kp COMMA  &kp DOT  &mt RIGHT_CONTROL MINUS
+&kp LCTRL         &kp LEFT_WIN  &mt LEFT_ALT TAB  &lt_to_layer_0 6 INT_HENKAN  &lt 2 SPACE  &lt 2 INT_MUHENKAN      &kp BACKSPACE        &lt 1 ENTER                             &kp DEL
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
