@@ -35,12 +35,12 @@
 
         tab {
             bindings = <&kp TAB>;
-            key-positions = <11 12>;
+            key-positions = <13 12>;
         };
 
         shift_tab {
             bindings = <&kp LS(TAB)>;
-            key-positions = <12 13>;
+            key-positions = <11 10>;
         };
 
         muhennkann {
@@ -98,7 +98,7 @@
         default_layer {
             bindings = <
 &kp Q             &kp W         &kp E         &kp R                        &kp T                                                     &kp Y        &kp U  &lt 5 I    &kp O    &kp P
-&kp A             &kp S         &kp D         &kp F                        &kp G        &kp LS(LG(S))           &kp SQT              &kp H        &kp J  &kp K      &kp L    &mt RIGHT_SHIFT SEMICOLON
+&kp A             &kp S         &kp D         &kp F                        &kp G        &kp LS(LG(S))           &kp SQT              &kp H        &kp J  &lt 5 K    &kp L    &mt RIGHT_SHIFT SEMICOLON
 &mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                        &kp B        &kp SLASH               &kp LS(NON_US_HASH)  &kp N        &kp M  &kp COMMA  &kp DOT  &mt RIGHT_CONTROL MINUS
 &kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 6 INT_HENKAN  &lt 2 SPACE  &lt 2 INT_MUHENKAN      &kp BACKSPACE        &lt 1 ENTER                             &kp DEL
             >;
@@ -140,10 +140,10 @@
 
         MOUSE {
             bindings = <
-&trans  &trans  &trans    &trans    &trans                          &trans  &trans    &trans             &trans    &trans
-&trans  &trans  &mkp MB4  &mkp MB5  &trans    &trans        &trans  &trans  &mkp MB1  &lt 5 PRINTSCREEN  &mkp MB2  &trans
-&trans  &trans  &trans    &trans    &trans    &trans        &trans  &trans  &trans    &trans             &trans    &trans
-&trans  &trans  &trans    &trans    &mkp MB1  &mkp MB2      &trans  &trans                                         &trans
+&trans  &trans  &trans    &trans    &trans                          &trans  &trans    &trans  &trans    &trans
+&trans  &trans  &mkp MB4  &mkp MB5  &trans    &trans        &trans  &trans  &mkp MB1  &trans  &mkp MB2  &trans
+&trans  &trans  &trans    &trans    &trans    &trans        &trans  &trans  &trans    &trans  &trans    &trans
+&trans  &trans  &trans    &trans    &mkp MB2  &mkp MB1      &trans  &trans                              &trans
             >;
         };
 
