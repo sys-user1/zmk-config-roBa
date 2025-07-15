@@ -55,12 +55,12 @@
 
         ctrl+shift+HOME {
             bindings = <&kp LS(LC(HOME))>;
-            key-positions = <23 22 24>;
+            key-positions = <0 1>;
         };
 
         ctrl+shift+END {
             bindings = <&kp LS(LC(END))>;
-            key-positions = <25 26 27>;
+            key-positions = <2 3>;
         };
     };
 
