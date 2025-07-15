@@ -35,16 +35,6 @@
     combos {
         compatible = "zmk,combos";
 
-        tab {
-            bindings = <&kp TAB>;
-            key-positions = <13 12>;
-        };
-
-        shift_tab {
-            bindings = <&kp LS(TAB)>;
-            key-positions = <11 10>;
-        };
-
         ctrl_shift_HOME {
             bindings = <&kp LS(LC(HOME))>;
             key-positions = <0 1>;
@@ -67,12 +57,12 @@
 
         left_click {
             bindings = <&mkp MB1>;
-            key-positions = <18 19>;
+            key-positions = <10 11>;
         };
 
         right_click {
             bindings = <&mkp MB2>;
-            key-positions = <20 21>;
+            key-positions = <13 12>;
         };
     };
 
