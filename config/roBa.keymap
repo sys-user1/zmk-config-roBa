@@ -52,6 +52,16 @@
             bindings = <&kp LC(END)>;
             key-positions = <24 25>;
         };
+
+        ctrl+shift+HOME {
+            bindings = <&kp LS(LC(HOME))>;
+            key-positions = <23 22 24>;
+        };
+
+        ctrl+shift+END {
+            bindings = <&kp LS(LC(END))>;
+            key-positions = <25 26 27>;
+        };
     };
 
     macros {
