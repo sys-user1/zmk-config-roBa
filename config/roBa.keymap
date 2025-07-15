@@ -43,22 +43,22 @@
             key-positions = <11 10>;
         };
 
-        ctrl+HOME {
+        ctrl_HOME {
             bindings = <&kp LC(HOME)>;
             key-positions = <22 23>;
         };
 
-        ctrl+END {
+        ctrl_END {
             bindings = <&kp LC(END)>;
             key-positions = <24 25>;
         };
 
-        ctrl+shift+HOME {
+        ctrl_shift_HOME {
             bindings = <&kp LS(LC(HOME))>;
             key-positions = <0 1>;
         };
 
-        ctrl+shift+END {
+        ctrl_shift_END {
             bindings = <&kp LS(LC(END))>;
             key-positions = <2 3>;
         };
