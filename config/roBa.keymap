@@ -85,6 +85,13 @@
 
             tap-ms = <20>;
         };
+
+        macro_double_click: macro {
+            compatible = "zmk,behavior-macro";
+            label = "MACRO_DOUBLE_CLICK";
+            #binding-cells = <0>;
+            bindings = <&mkp MOUSE_BTN1 &delay-ms 50 &mkp MOUSE_BTN1>;
+        };
     };
 
     keymap {
