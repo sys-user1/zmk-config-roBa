@@ -114,7 +114,7 @@
             bindings = <
 &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp LS(NUMBER_4)   &kp LS(NUMBER_5)                                   &kp LS(NUMBER_6)     &kp LS(NUMBER_7)  &kp LS(NUMBER_8)  &kp LS(NUMBER_9)  &kp INTERNATIONAL_3
 &trans            &trans            &trans            &kp RIGHT_BRACKET  &kp SLASH         &trans      &trans               &kp INTERNATIONAL_1  &kp BACKSLASH     &trans            &kp EQUAL         &mt RIGHT_SHIFT LEFT_BRACKET
-&kp LEFT_SHIFT    &trans            &trans            &trans             &trans            &trans      &trans               &trans               &trans            &trans            &trans            &mt RIGHT_CONTROL SEMI
+&kp LEFT_SHIFT    &trans            &trans            &trans             &trans            &trans      &kp RC(HOME)         &kp RC(END)          &kp HOME          &kp END           &trans            &mt RIGHT_CONTROL SEMI
 &kp LEFT_CONTROL  &trans            &trans            &trans             &trans            &trans      &kp INTERNATIONAL_5  &kp INTERNATIONAL_4                                                        &trans
             >;
         };
