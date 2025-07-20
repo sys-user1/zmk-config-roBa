@@ -14,6 +14,7 @@
 
 &trackball {
     // automouse-layer = <4>;
+
     scroll-layers = <5>;
 
     // arrows {
@@ -85,13 +86,6 @@
 
             tap-ms = <20>;
         };
-
-        macro_double_click: macro {
-            compatible = "zmk,behavior-macro";
-            label = "MACRO_DOUBLE_CLICK";
-            #binding-cells = <0>;
-            bindings = <&mkp MOUSE_BTN1 &delay-ms 50 &mkp MOUSE_BTN1>;
-        };
     };
 
     keymap {
@@ -142,10 +136,10 @@
 
         MOUSE {
             bindings = <
-&trans            &trans  &trans    &trans    &trans                      &trans  &trans  &trans  &trans  &trans
-&trans            &trans  &mkp MB2  &mkp MB1  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &kp RIGHT_SHIFT
-&kp LEFT_SHIFT    &trans  &trans    &trans    &trans  &trans      &trans  &trans  &trans  &trans  &trans  &kp RIGHT_CONTROL
-&kp LEFT_CONTROL  &trans  &trans    &trans    &trans  &trans      &trans  &trans                          &trans
+&trans            &trans  &trans    &trans    &trans                      &trans  &trans    &trans  &trans  &trans
+&trans            &trans  &mkp MB2  &mkp MB1  &trans  &trans      &trans  &trans  &mkp MB1  &trans  &trans  &kp RIGHT_SHIFT
+&kp LEFT_SHIFT    &trans  &trans    &trans    &trans  &trans      &trans  &trans  &trans    &trans  &trans  &kp RIGHT_CONTROL
+&kp LEFT_CONTROL  &trans  &trans    &trans    &trans  &trans      &trans  &trans                            &trans
             >;
         };
 
