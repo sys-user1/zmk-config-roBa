@@ -114,7 +114,7 @@
 &kp NUMBER_1                &kp NUMBER_2  &kp NUMBER_3                &kp NUMBER_4  &kp NUMBER_5                                  &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0
 &kp F1                      &kp F2        &kp F3                      &kp F4        &kp F5        &kp F6            &kp F7        &kp F8        &kp F9        &kp F10       &kp F11       &mt RIGHT_SHIFT F12
 &mt LEFT_SHIFT PAGE_UP      &mkp MB4      &mkp MB5                    &mkp MB1      &kp UP        &kp UP_ARROW      &kp RC(HOME)  &kp RC(END)   &kp HOME      &kp END       &kp RS(HOME)  &mt RIGHT_CONTROL RS(END)
-&mt LEFT_CONTROL PAGE_DOWN  &kp LEFT_WIN  &mt LEFT_ALT K_APPLICATION  &kp LEFT      &kp DOWN      &kp RIGHT         &kp ESCAPE    &trans                                                  &kp RA(F4)
+&mt LEFT_CONTROL PAGE_DOWN  &kp LEFT_WIN  &mt LEFT_ALT K_APPLICATION  &kp LEFT      &kp DOWN      &kp RIGHT         &kp ESCAPE    &trans                                                  &kp DELETE
             >;
         };
 
