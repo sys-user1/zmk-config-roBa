@@ -97,6 +97,7 @@
 
     keymap {
         compatible = "zmk,keymap";
+        tap-ms = <120>;
 
         default_layer {
             bindings = <
