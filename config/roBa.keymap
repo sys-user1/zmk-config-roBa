@@ -144,10 +144,10 @@
 
         MOUSE {
             bindings = <
-&trans            &trans  &trans  &trans  &trans                      &trans  &trans    &trans              &trans  &trans
-&trans            &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB1  &lt 5 RS(NUMBER_0)  &trans  &kp RIGHT_SHIFT
-&kp LEFT_SHIFT    &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans    &trans              &trans  &kp RIGHT_CONTROL
-&kp LEFT_CONTROL  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                        &trans
+&trans  &trans  &trans  &trans  &trans                      &trans  &mkp MB5  &mkp MB4            &trans    &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB1  &lt 5 RS(NUMBER_0)  &mkp MB2  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans    &trans              &trans    &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                          &trans
             >;
         };
 
