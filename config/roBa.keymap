@@ -70,6 +70,13 @@
 
             label = "MACRO_DOUBLE_CLICK";
         };
+
+        bluetooth_pairing: bluetooth_pairing {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none>;
+            label = "BLUETOOTH_PAIRING";
+        };
     };
 
     behaviors {
@@ -126,10 +133,10 @@
 
         NUM {
             bindings = <
-&kp NUMBER_1                &kp NUMBER_2  &kp NUMBER_3                &kp NUMBER_4  &kp NUMBER_5                                  &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0
-&kp F1                      &kp F2        &kp F3                      &kp F4        &kp F5        &kp F6            &kp F7        &kp F8        &kp F9        &kp F10       &kp F11       &mt RIGHT_SHIFT F12
-&mt LEFT_SHIFT PAGE_UP      &mkp MB4      &mkp MB5                    &mkp MB1      &kp UP        &kp UP_ARROW      &kp RC(HOME)  &kp RC(END)   &kp HOME      &kp END       &kp RS(HOME)  &mt RIGHT_CONTROL RS(END)
-&mt LEFT_CONTROL PAGE_DOWN  &kp LEFT_WIN  &mt LEFT_ALT K_APPLICATION  &kp LEFT      &kp DOWN      &kp RIGHT         &kp ESCAPE    &trans                                                  &kp DELETE
+&kp NUMBER_1                &kp NUMBER_2  &kp NUMBER_3         &kp NUMBER_4  &kp NUMBER_5                                       &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0
+&kp F1                      &kp F2        &kp F3               &kp F4        &kp F5        &kp F6            &kp F7             &kp F8        &kp F9        &kp F10       &kp F11       &mt RIGHT_SHIFT F12
+&mt LEFT_SHIFT PAGE_UP      &mkp MB4      &mkp MB5             &mkp MB1      &kp UP        &kp UP_ARROW      &kp RC(HOME)       &kp RC(END)   &kp HOME      &kp END       &kp RS(HOME)  &mt RIGHT_CONTROL RS(END)
+&mt LEFT_CONTROL PAGE_DOWN  &kp LEFT_WIN  &mt LEFT_ALT ESCAPE  &kp LEFT      &kp DOWN      &kp RIGHT         &kp K_APPLICATION  &trans                                                  &kp DELETE
             >;
 
             sensor-bindings = <&encoder_msc_left_right>;
@@ -137,31 +144,17 @@
 
         SYMBOLS {
             bindings = <
-&kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp LS(NUMBER_4)   &kp LS(NUMBER_5)                                   &kp LS(NUMBER_6)     &kp LS(NUMBER_7)  &kp LS(NUMBER_8)  &kp LS(NUMBER_9)  &kp INTERNATIONAL_3
-&trans            &trans            &trans            &kp RIGHT_BRACKET  &kp SLASH         &trans      &trans               &kp INTERNATIONAL_1  &kp BACKSLASH     &trans            &kp EQUAL         &mt RIGHT_SHIFT LEFT_BRACKET
-&kp LEFT_SHIFT    &trans            &trans            &trans             &trans            &trans      &kp RC(HOME)         &kp RC(END)          &kp HOME          &kp END           &trans            &mt RIGHT_CONTROL SEMI
-&kp LEFT_CONTROL  &trans            &trans            &trans             &trans            &trans      &kp INTERNATIONAL_5  &kp INTERNATIONAL_4                                                        &trans
+&kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp LS(NUMBER_4)   &kp LS(NUMBER_5)                                           &kp LS(NUMBER_6)     &kp LS(NUMBER_7)  &kp LS(NUMBER_8)  &kp LS(NUMBER_9)  &kp INTERNATIONAL_3
+&trans            &trans            &double_click     &kp RIGHT_BRACKET  &kp SLASH         &bt BT_CLR_ALL      &trans               &kp INTERNATIONAL_1  &kp BACKSLASH     &trans            &kp EQUAL         &mt RIGHT_SHIFT LEFT_BRACKET
+&kp LEFT_SHIFT    &bt BT_SEL 4      &bt BT_SEL 3      &bt BT_SEL 2       &bt BT_SEL 1      &bt BT_SEL 0        &kp RC(HOME)         &kp RC(END)          &kp HOME          &kp END           &trans            &mt RIGHT_CONTROL SEMI
+&kp LEFT_CONTROL  &kp LEFT_GUI      &kp LEFT_ALT      &trans             &trans            &trans              &kp INTERNATIONAL_5  &kp INTERNATIONAL_4                                                        &kp DELETE
             >;
-        };
-
-        ARROW {
-            bindings = <
-&kp ESCAPE      &kp LC(LS(TAB))         &kp UP_ARROW    &kp LC(TAB)              &trans                       &trans  &trans  &trans  &trans  &trans
-&kp HOME        &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&kp LEFT_SHIFT  &kp LG(LS(LEFT_ARROW))  &trans          &kp LG(LS(RIGHT_ARROW))  &trans   &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans          &trans                  &trans          &trans                   &trans   &trans      &trans  &trans                          &trans
-            >;
-
-            //// sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
-            // 設定したスクロール操作を割り当て
-
-            sensor-bindings = <&encoder_msc_down_up>;
         };
 
         MOUSE {
             bindings = <
 &trans  &trans  &trans  &trans  &trans                      &trans  &mkp MB5  &mkp MB4            &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB1  &lt 5 RS(NUMBER_0)  &mkp MB2  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB1  &lt 4 RS(NUMBER_0)  &mkp MB2  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans    &trans              &trans    &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                          &trans
             >;
